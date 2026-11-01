@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carlos Eduardo - Desenvolvedor Web. Sites profissionais que transformam visitantes em clientes. Landing pages, sites institucionais e e-commerce.">
+    <meta name="theme-color" content="#030303">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Carlos Eduardo | Desenvolvimento Web">
+    <meta property="og:description" content="Sites profissionais que transformam visitantes em clientes. Desenvolvo experiências digitais modernas e estratégicas.">
+    <meta property="og:image" content="./img/og-preview.svg">
+    <meta property="og:url" content="https://carloseduardo.dev">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carlos Eduardo | Desenvolvimento Web">
+    <meta name="twitter:description" content="Sites profissionais que transformam visitantes em clientes.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Carlos Eduardo | Desenvolvimento Web</title>
+</head>
+
+<body>
+    <!-- Animated Canvas Background (fallback/video replacement) -->
+    <canvas id="bg-canvas" class="video-fundo" aria-hidden="true"></canvas>
+
+    <div class="overlay-video" aria-hidden="true"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress__bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navegacao" role="navigation" aria-label="Navegação principal">
+        <div class="logo" aria-label="Carlos Eduardo - Início">
+            Carlos<span> Eduardo</span>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+        </button>
+
+        <ul class="menu" id="menu-principal" role="menubar">
+            <li role="none">
+                <a href="#inicio" class="menu-link" role="menuitem">Início</a>
+            </li>
+            <li role="none">
+                <a href="#sobre" class="menu-link" role="menuitem">Sobre</a>
+            </li>
+            <li role="none">
+                <a href="#projetos" class="menu-link" role="menuitem">Projetos</a>
+            </li>
+            <li role="none">
+                <a href="#contatos" class="menu-link" role="menuitem">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="inicio" class="cabecalho" role="main">
+        <div class="hero-conteudo">
+            <div class="hero-badge" data-reveal>
+                <span class="hero-badge__dot" aria-hidden="true"></span>
+                <span>Desenvolvedor Web Full-Stack</span>
+                <span class="hero-badge__dot" aria-hidden="true"></span>
+            </div>
+
+            <h1 data-reveal data-reveal-delay="100">
+                Seu negócio merece um site que
+                <span class="highlight">gere resultados.</span>
+            </h1>
+
+            <p class="cabecalho-sub-titulo" data-reveal data-reveal-delay="200">
+                Sites profissionais que transformam visitantes em clientes.
+            </p>
+
+            <p class="hero-descricao" data-reveal data-reveal-delay="300">
+                Desenvolvo sites modernos, rápidos e estratégicos
+                para empresas que querem aumentar sua presença digital,
+                transmitir credibilidade e conquistar novas oportunidades.
+            </p>
+
+            <!-- Trust Indicators -->
+            <div class="hero-stats" data-reveal data-reveal-delay="400" role="list" aria-label="Resultados">
+                <div class="stat" role="listitem">
+                    <div class="stat__value" data-count="50">0</div>
+                    <div class="stat__label">Projetos Entregues</div>
+                </div>
+                <div class="stat" role="listitem">
+                    <div class="stat__value" data-count="98">0</div>
+                    <div class="stat__label">% Satisfação</div>
+                </div>
+                <div class="stat" role="listitem">
+                    <div class="stat__value" data-count="3">0</div>
+                    <div class="stat__label">Dias Média Entrega</div>
+                </div>
+            </div>
+
+            <div class="hero-botoes" data-reveal data-reveal-delay="500">
+                <a href="#contatos" class="botao-principal">
+                    <span>Quero meu site</span>
+                    <svg class="botao-principal__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+
+                <a href="#projetos" class="botao-secundario">
+                    Ver projetos
+                </a>
+            </div>
+
+            <!-- Client Logos / Trust -->
+            <div class="hero-trust" data-reveal data-reveal-delay="600" aria-label="Tecnologias utilizadas">
+                <p class="hero-trust__label">Tecnologias que domino</p>
+                <div class="hero-trust__icons" aria-hidden="true">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="32" height="32" loading="lazy">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="32" height="32" loading="lazy">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="32" height="32" loading="lazy">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="32" height="32" loading="lazy">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="32" height="32" loading="lazy">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="32" height="32" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="perfil-container">
+            <div class="brilho" aria-hidden="true"></div>
+
+            <div class="foto-wrapper">
+                <img
+                    src="./img/carlos.png"
+                    alt="Foto de Carlos Eduardo - Desenvolvedor Web"
+                    class="foto-perfil"
+                    loading="eager"
+                    fetchpriority="high"
+                >
+                <div class="foto-ring" aria-hidden="true"></div>
+                <div class="foto-pulse" aria-hidden="true"></div>
+            </div>
+
+            <!-- Floating Cards -->
+            <div class="floating-cards" aria-hidden="true">
+                <div class="float-card float-card--1" data-float>
+                    <div class="float-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <span>Performance</span>
+                </div>
+                <div class="float-card float-card--2" data-float>
+                    <div class="float-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <span>Entrega Rápida</span>
+                </div>
+                <div class="float-card float-card--3" data-float>
+                    <div class="float-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <span>Seguro</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="sobre" class="sobre" aria-labelledby="sobre-titulo">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">SOBRE</span>
+                <h2 id="sobre-titulo" class="sobre-titulo">Seu site não precisa apenas ser bonito.</h2>
+                <p class="section-descricao">Ele precisa transmitir confiança, apresentar sua empresa de forma profissional e facilitar a decisão do seu cliente.</p>
+            </div>
+
+            <div class="sobre-grid">
+                <div class="sobre-caixa" data-reveal>
+                    <div class="sobre-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="sobre-caixa__titulo">Experiência que entrega</h3>
+                    <p class="sobre-paragrafo">
+                        Sou <strong>Carlos Eduardo</strong>, desenvolvedor web focado na criação de experiências digitais modernas, profissionais e estratégicas.
+                        <br><br>
+                        Meu objetivo é transformar ideias em sites que valorizam marcas, apresentam produtos e serviços com clareza e ajudam empresas a conquistar novas oportunidades.
+                    </p>
+
+                    <div class="skills" role="list" aria-label="Habilidades técnicas" data-reveal data-reveal-delay="100">
+                        <span class="skill" role="listitem">HTML5 / CSS3</span>
+                        <span class="skill" role="listitem">JavaScript (ES6+)</span>
+                        <span class="skill" role="listitem">React / Next.js</span>
+                        <span class="skill" role="listitem">Node.js / APIs</span>
+                        <span class="skill" role="listitem">Git / GitHub</span>
+                        <span class="skill" role="listitem">Vercel / Netlify</span>
+                        <span class="skill" role="listitem">SEO Técnico</span>
+                        <span class="skill" role="listitem">Performance Web</span>
+                        <span class="skill" role="listitem">Acessibilidade (WCAG)</span>
+                        <span class="skill" role="listitem">Design Responsivo</span>
+                    </div>
+                </div>
+
+                <div class="sobre-experiencia" data-reveal data-reveal-delay="200">
+                    <h3 class="sobre-experiencia__titulo">Como trabalho</h3>
+
+                    <div class="process" role="list" aria-label="Processo de desenvolvimento">
+                        <article class="process-step" role="listitem" data-reveal>
+                            <div class="process-step__number">01</div>
+                            <div class="process-step__content">
+                                <h4>Descoberta</h4>
+                                <p>Entendo seu negócio, público-alvo e objetivos. Definimos escopo, cronograma e métricas de sucesso.</p>
+                            </div>
+                        </article>
+                        <article class="process-step" role="listitem" data-reveal data-reveal-delay="100">
+                            <div class="process-step__number">02</div>
+                            <div class="process-step__content">
+                                <h4>Design & Protótipo</h4>
+                                <p>Crio wireframes e protótipos navegáveis. Você aprova o visual antes de qualquer linha de código.</p>
+                            </div>
+                        </article>
+                        <article class="process-step" role="listitem" data-reveal data-reveal-delay="200">
+                            <div class="process-step__number">03</div>
+                            <div class="process-step__content">
+                                <h4>Desenvolvimento</h4>
+                                <p>Construo com código limpo, performático e acessível. Testes em dispositivos reais durante o processo.</p>
+                            </div>
+                        </article>
+                        <article class="process-step" role="listitem" data-reveal data-reveal-delay="300">
+                            <div class="process-step__number">04</div>
+                            <div class="process-step__content">
+                                <h4>Entrega & Suporte</h4>
+                                <p>Deploy, treinamento para você gerenciar conteúdo e 30 dias de suporte pós-lançamento incluídos.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="projetos" aria-labelledby="projetos-titulo">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">PORTFÓLIO</span>
+                <h2 id="projetos-titulo" class="projetos-titulo">Projetos que geram impacto</h2>
+                <p class="section-descricao">Alguns dos projetos desenvolvidos para diferentes experiências e necessidades digitais.</p>
+            </div>
+
+            <!-- Filter -->
+            <div class="projetos-filter" role="tablist" aria-label="Filtrar projetos" data-reveal>
+                <button class="filter-btn active" role="tab" aria-selected="true" aria-controls="panel-todos" data-filter="all">Todos</button>
+                <button class="filter-btn" role="tab" aria-selected="false" aria-controls="panel-landing" data-filter="landing">Landing Pages</button>
+                <button class="filter-btn" role="tab" aria-selected="false" aria-controls="panel-site" data-filter="site">Sites Completos</button>
+                <button class="filter-btn" role="tab" aria-selected="false" aria-controls="panel-ecommerce" data-filter="ecommerce">E-commerce</button>
+            </div>
+
+            <div class="projetos-caixa" role="tabpanel" id="panel-todos" aria-label="Todos os projetos">
+                <!-- Projeto 1 - Coca Cola -->
+                <article class="projetos-card" data-category="landing" data-reveal>
+                    <div class="imagem-container">
+                        <img
+                            src="./img/projeto1.png"
+                            alt="Preview do projeto Coca-Cola - Landing page com identidade visual forte"
+                            class="projetos-imagem"
+                            loading="lazy"
+                        >
+                        <div class="imagem-overlay">
+                            <a
+                                href="https://cadualmeida0728-blip.github.io/landingpage-coca-cola/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="botao-projeto"
+                                aria-label="Ver projeto Coca-Cola ao vivo"
+                            >
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Ver projeto
+                            </a>
+                        </div>
+                        <div class="project-tag">Landing Page</div>
+                    </div>
+
+                    <div class="caixa-textos-projeto">
+                        <div class="project-meta">
+                            <span class="numero-projeto">PROJETO 01</span>
+                            <span class="project-year">2024</span>
+                        </div>
+
+                        <h3 class="info-projetos">Coca-Cola</h3>
+
+                        <p class="paragrafo-projetos">Landing page desenvolvida com foco em impacto visual, identidade de marca e experiência digital imersiva.</p>
+
+                        <ul class="project-highlights" aria-label="Destaques do projeto">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Animações GSAP</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Mobile First</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> SEO Otimizado</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>GSAP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 2 - Barbearia -->
+                <article class="projetos-card" data-category="site" data-reveal data-reveal-delay="100">
+                    <div class="imagem-container">
+                        <img
+                            src="./img/projeto2.png"
+                            alt="Preview do projeto Barbearia - Site institucional com agendamento"
+                            class="projetos-imagem"
+                            loading="lazy"
+                        >
+                        <div class="imagem-overlay">
+                            <a
+                                href="https://cadualmeida0728-blip.github.io/barbearia/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="botao-projeto"
+                                aria-label="Ver projeto Barbearia ao vivo"
+                            >
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Ver projeto
+                            </a>
+                        </div>
+                        <div class="project-tag">Site Institucional</div>
+                    </div>
+
+                    <div class="caixa-textos-projeto">
+                        <div class="project-meta">
+                            <span class="numero-projeto">PROJETO 02</span>
+                            <span class="project-year">2024</span>
+                        </div>
+
+                        <h3 class="info-projetos">Barbearia</h3>
+
+                        <p class="paragrafo-projetos">Site desenvolvido para apresentar serviços, destacar a identidade da barbearia e facilitar o contato com clientes.</p>
+
+                        <ul class="project-highlights" aria-label="Destaques do projeto">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Agendamento WhatsApp</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Galeria de Cortes</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Depoimentos</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS Vanilla</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 3 - Cafeteria -->
+                <article class="projetos-card" data-category="ecommerce" data-reveal data-reveal-delay="200">
+                    <div class="imagem-container">
+                        <img
+                            src="./img/projeto3.png"
+                            alt="Preview do projeto Cafeteria - Cardápio digital e pedidos"
+                            class="projetos-imagem"
+                            loading="lazy"
+                        >
+                        <div class="imagem-overlay">
+                            <a
+                                href="https://cadualmeida0728-blip.github.io/cafeteria/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="botao-projeto"
+                                aria-label="Ver projeto Cafeteria ao vivo"
+                            >
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Ver projeto
+                            </a>
+                        </div>
+                        <div class="project-tag">E-commerce</div>
+                    </div>
+
+                    <div class="caixa-textos-projeto">
+                        <div class="project-meta">
+                            <span class="numero-projeto">PROJETO 03</span>
+                            <span class="project-year">2024</span>
+                        </div>
+
+                        <h3 class="info-projetos">Cafeteria</h3>
+
+                        <p class="paragrafo-projetos">Página criada para apresentar produtos, transmitir a identidade da cafeteria e proporcionar uma experiência moderna de pedidos.</p>
+
+                        <ul class="project-highlights" aria-label="Destaques do projeto">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Cardápio Interativo</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Pedido via WhatsApp</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Carrinho Local</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS + LocalStorage</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CTA Projects -->
+            <div class="projetos-cta" data-reveal data-reveal-delay="300">
+                <p>Quer ver mais projetos ou tem um tipo específico em mente?</p>
+                <a href="#contatos" class="botao-secundario botao-secundario--lg">Vamos conversar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (NEW) -->
+    <section class="depoimentos" aria-labelledby="depoimentos-titulo">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">DEPOIMENTOS</span>
+                <h2 id="depoimentos-titulo" class="sobre-titulo">O que clientes dizem</h2>
+                <p class="section-descricao">Resultados reais de empresas que confiaram no meu trabalho.</p>
+            </div>
+
+            <div class="depoimentos-slider" data-slider>
+                <div class="depoimentos-track" role="list">
+                    <article class="depoimento-card" role="listitem" data-reveal>
+                        <div class="depoimento-stars" aria-label="5 de 5 estrelas">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <p class="depoimento-texto">"O Carlos entregou muito além do esperado. Meu site passou a converter 3x mais leads no primeiro mês. Profissionalismo e atenção aos detalhes raros de encontrar."</p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar" aria-hidden="true">RC</div>
+                            <div>
+                                <strong>Roberto Carvalho</strong>
+                                <span>CEO - Carvalho Imóveis</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="depoimento-card" role="listitem" data-reveal>
+                        <div class="depoimento-stars" aria-label="5 de 5 estrelas">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <p class="depoimento-texto">"Entregou no prazo combinado, código limpo e me ensinou a gerenciar o conteúdo. Hoje eu mesmo atualizo meus produtos sem depender de ninguém."</p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar" aria-hidden="true">MS</div>
+                            <div>
+                                <strong>Mariana Santos</strong>
+                                <span>Dona - Doce Vida Cafeteria</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="depoimento-card" role="listitem" data-reveal>
+                        <div class="depoimento-stars" aria-label="5 de 5 estrelas">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <p class="depoimento-texto">"Landing page linda, rápida e que carrega instantâneo no mobile. Meus anúncios finalmente têm para onde mandar tráfego qualificado."</p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar" aria-hidden="true">AL</div>
+                            <div>
+                                <strong>André Lima</strong>
+                                <span>Fundador - FitLab Suplementos</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="slider-btn slider-btn--prev" aria-label="Depoimento anterior" data-slider-prev>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <button class="slider-btn slider-btn--next" aria-label="Próximo depoimento" data-slider-next>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+
+                <div class="slider-dots" aria-label="Navegação dos depoimentos" data-slider-dots></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contatos" class="contatos" aria-labelledby="contatos-titulo">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">VAMOS CONVERSAR</span>
+                <h2 id="contatos-titulo" class="contatos-titulo">Pronto para colocar sua empresa na internet?</h2>
+                <p class="section-descricao">Conte um pouco sobre sua empresa e vamos transformar sua ideia em um site profissional.</p>
+            </div>
+
+            <div class="contato-grid">
+                <div class="contato-info" data-reveal>
+                    <h3>Prefere falar direto?</h3>
+                    <p>Também atendo por WhatsApp e e-mail. Respondo em até 2h úteis.</p>
+
+                    <div class="contato-links">
+                        <a href="https://wa.me/5567991459350" target="_blank" rel="noopener noreferrer" class="contato-link" data-reveal>
+                            <div class="contato-link__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>(67) 99145-9350</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:carlos@email.com" class="contato-link" data-reveal data-reveal-delay="100">
+                            <div class="contato-link__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>E-mail</strong>
+                                <span>carlos@email.com</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Benefits -->
+                    <ul class="benefits" role="list" aria-label="Benefícios de trabalhar comigo">
+                        <li class="benefit" data-reveal data-reveal-delay="200">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Código limpo e documentado</span>
+                        </li>
+                        <li class="benefit" data-reveal data-reveal-delay="300">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Otimizado para Google (SEO)</span>
+                        </li>
+                        <li class="benefit" data-reveal data-reveal-delay="400">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>30 dias de suporte grátis</span>
+                        </li>
+                        <li class="benefit" data-reveal data-reveal-delay="500">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Treinamento para você editar</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="formulario-contato" id="formulario" data-reveal data-reveal-delay="200" novalidate>
+                    <div class="form-header">
+                        <h3>Solicite seu orçamento</h3>
+                        <p>Preencha abaixo — respondo no WhatsApp em até 2h úteis.</p>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="nome">Seu nome <span class="required" aria-hidden="true">*</span></label>
+                        <input
+                            type="text"
+                            placeholder="Digite seu nome completo"
+                            class="campo-form"
+                            id="nome"
+                            required
+                            autocomplete="name"
+                            aria-describedby="nome-error"
+                        >
+                        <span class="error-message" id="nome-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="whatsapp">WhatsApp <span class="required" aria-hidden="true">*</span></label>
+                        <input
+                            type="tel"
+                            placeholder="(67) 99999-9999"
+                            class="campo-form"
+                            id="whatsapp"
+                            required
+                            autocomplete="tel"
+                            inputmode="tel"
+                            aria-describedby="whatsapp-error"
+                        >
+                        <span class="error-message" id="whatsapp-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label>Tipo de projeto <span class="required" aria-hidden="true">*</span></label>
+                        <div class="radio-group" role="radiogroup" aria-label="Tipo de projeto">
+                            <label class="radio-option">
+                                <input type="radio" name="tipo" value="landing" required>
+                                <span class="radio-custom"></span>
+                                <span>Landing Page (1 página)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="tipo" value="institucional">
+                                <span class="radio-custom"></span>
+                                <span>Site Institucional (5-10 páginas)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="tipo" value="ecommerce">
+                                <span class="radio-custom"></span>
+                                <span>E-commerce / Catálogo</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="tipo" value="outro">
+                                <span class="radio-custom"></span>
+                                <span>Outro / Personalizado</span>
+                            </label>
+                        </div>
+                        <span class="error-message" id="tipo-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="prazo">Prazo desejado</label>
+                        <select class="campo-form" id="prazo" aria-describedby="prazo-help">
+                            <option value="">Selecione...</option>
+                            <option value="urgente">Urgente (1-2 semanas)</option>
+                            <option value="normal">Normal (3-4 semanas)</option>
+                            <option value="flexivel">Flexível (sem pressa)</option>
+                        </select>
+                        <span id="prazo-help" class="form-help">Me ajuda a organizar a agenda</span>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="mensagem">Conte sobre seu projeto <span class="required" aria-hidden="true">*</span></label>
+                        <textarea
+                            class="campo-form"
+                            placeholder="O que sua empresa faz? Quais funcionalidades precisa? Tem referências visuais?"
+                            rows="5"
+                            id="mensagem"
+                            required
+                            aria-describedby="mensagem-error"
+                        ></textarea>
+                        <span class="error-message" id="mensagem-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="termos" required>
+                            <span class="checkbox-custom"></span>
+                            <span>Concordo em receber contato via WhatsApp para orçamento</span>
+                        </label>
+                        <span class="error-message" id="termos-error" aria-live="polite"></span>
+                    </div>
+
+                    <button type="submit" class="botao-form">
+                        <span class="btn-text">Solicitar meu site →</span>
+                        <span class="btn-loading" aria-hidden="true">
+                            <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                                <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
+
+                <!-- Success State -->
+                <div class="form-success" id="form-success" hidden aria-live="polite">
+                    <div class="success-icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="16 8 12 12 8 16"/>
+                        </svg>
+                    </div>
+                    <h3>Mensagem enviada!</h3>
+                    <p>Vou te chamar no WhatsApp em instantes para conversarmos sobre seu projeto.</p>
+                    <button type="button" class="botao-secundario" id="form-reset">Enviar outro projeto</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="rodape" role="contentinfo">
+        <div class="container">
+            <div class="rodape-grid">
+                <div class="rodape-brand">
+                    <div class="logo">Carlos<span> Eduardo</span></div>
+                    <p>Desenvolvedor Web — Transformando ideias em resultados digitais.</p>
+                    <div class="social-links" role="list" aria-label="Redes sociais">
+                        <a href="https://github.com/cadualmeida0728" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/carloseduardo" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/carloseduardo.dev" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="rodape-nav" aria-label="Navegação do rodapé">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contatos">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="rodape-nav" aria-label="Serviços">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#contatos">Landing Pages</a></li>
+                        <li><a href="#contatos">Sites Institucionais</a></li>
+                        <li><a href="#contatos">E-commerce</a></li>
+                        <li><a href="#contatos">Manutenção & SEO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="rodape-bottom">
+                <p>© 2026 Carlos Eduardo. Todos os direitos reservados.</p>
+                <p class="rodape-made">Feito com <span class="heart" aria-hidden="true">♥</span> e código limpo</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./main.js"></script>
+</body>
+</html>
